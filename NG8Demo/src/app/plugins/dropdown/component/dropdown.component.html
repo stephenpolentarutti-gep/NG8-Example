@@ -1,0 +1,4 @@
+<p>{{dropdownModel.displayLabel}}</p>
+<select id="smrtdrpdwn" (change)="onValueChange($event.target)">
+    <option *ngFor="let item of dropdownModel.dropdownItems" value="{{item.value}}">{{item.text}}</option>
+</select>
