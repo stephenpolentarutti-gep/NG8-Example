@@ -1,1 +1,13 @@
 <p>demopagecomponent works!</p>
+<select id="ddl" name="Drop" (change)="setValues($event.target.value)">
+    <option >
+        Type
+    </option>
+    <option *ngFor="let Type of Type" [value]="Type.Value" >
+        {{Type.Value}}
+    </option>
+</select>
+<ng-container #TPRMContainer>
+</ng-container>
+
+

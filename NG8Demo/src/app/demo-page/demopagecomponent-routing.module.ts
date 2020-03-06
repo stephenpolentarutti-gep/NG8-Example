@@ -1,11 +1,13 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { DemopagecomponentComponent } from './demopagecomponent/demopagecomponent.component';
 
+const routes: Routes = [{ path: '', component: DemopagecomponentComponent }];
 
-const routes: Routes = [];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
+  
 })
 export class DemoPageRoutingModule { }
