@@ -1,0 +1,9 @@
+<ng-container *ngTemplateOutlet="checkbox"></ng-container>
+  <!-- checkbox -->
+  <ng-template #checkbox>
+    <br/><br/><br/>
+    {{ chkConfig.text | uppercase}}
+    <br/>
+    <input type="checkbox" 
+            [ngStyle]="chkConfig.styles" >
+  </ng-template>

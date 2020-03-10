@@ -1,0 +1,25 @@
+<!-- <select id="moduleNames" (ngChange)="onChange($event.target.value)">
+    <option value="select">-- Select --</option>
+    <option value="textbox">Textbox</option>
+    <option value="checkbox">Checkbox</option>
+</select> -->
+
+
+<!-- <select (change)="updateSelectedValue($event.target.value)">
+    <option value="select">-- Select --</option>
+    <option value="1">Textbox</option>
+    <option value="2">Checkbox</option>
+</select> -->
+
+<ng-container *ngTemplateOutlet="dropdown"></ng-container>
+
+  <!-- dropdown -->
+  <ng-template #dropdown>
+      <br/>
+    selectedObject : {{selectedComponent}}
+    <br/>
+    <select id="HTMLComponents"  [ngStyle]="ddlConfig.styles" (change)="updateSelectedValue($event.target.value)">
+      <option value="Textbox">Textbox</option>
+      <option value="Checkbox">Checkbox</option>
+    </select>
+  </ng-template>

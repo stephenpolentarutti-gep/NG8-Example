@@ -1,0 +1,11 @@
+<ng-container *ngTemplateOutlet="text"></ng-container>
+
+<ng-template #text>
+    <br/><br/>
+    {{ textConfig.text | uppercase}}
+    <br/>
+    <input type="text"
+            [ngStyle]="textConfig.styles"
+            maxlength="textConfig.maxlength" />
+</ng-template>
+
