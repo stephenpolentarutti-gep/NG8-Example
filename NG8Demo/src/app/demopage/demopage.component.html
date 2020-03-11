@@ -1,3 +1,13 @@
 <app-dropdown></app-dropdown>
 <app-checkbox></app-checkbox>
 <app-textbox></app-textbox>
+<br/><br/>
+-------------------------------------------------------------------
+<br/><br/>
+<select (change)="updateSelectedValue($event.target.value)">
+    <option value="Textbox">Textbox</option>
+    <option value="Checkbox">Checkbox</option>
+  </select>
+
+<ng-template demo-host></ng-template>
+
